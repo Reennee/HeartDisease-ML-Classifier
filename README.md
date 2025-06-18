@@ -34,17 +34,17 @@ The dataset contains 303 samples with 13 features related to heart health and a 
 | 4        | Adam      | L1          | 50     | Yes             | 0.0001        | 0.2     | 0.93     | 0.93     | 0.92      | 0.95   | 0.95    | 0.25 |
 
 ### Best Performing Model
-The best performing neural network was Instance 2 with:
+The best performing neural network was Instance 1 with:
 - Adam optimizer
-- L2 regularization (λ=0.01)
-- Early stopping
+-  regularization (None)
+- Early stopping = No
 - Learning rate of 0.001
 - No dropout
 
-This achieved 87% accuracy and 0.93 ROC AUC on the validation set.
+This achieved 95% accuracy and 0.96 ROC AUC on the validation set.
 
 ### Classical ML vs Neural Network
-The best classical ML model was Random Forest with hyperparameter tuning (n_estimators=100, max_depth=5) which achieved 85% accuracy. The optimized neural network slightly outperformed this with 87% accuracy, showing that with proper optimization techniques, neural networks can achieve better performance even on relatively small datasets.
+The best classical ML model was Random Forest with hyperparameter tuning (n_estimators=100, max_depth=5) which achieved 88% accuracy. The optimized neural network outperformed this with 95% accuracy, showing that with proper optimization techniques, neural networks can achieve better performance even on relatively small datasets.
 
 ## Error Analysis & Model Evaluation
 - **Confusion Matrix**: Visualized for each model to show true/false positives/negatives
