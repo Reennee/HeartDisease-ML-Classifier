@@ -66,6 +66,8 @@ model = load_model('nn_instance2.h5')
 y_pred_proba = model.predict(X_test)
 y_pred = (y_pred_proba > 0.5).astype(int)
 ```
+## Video Submission
+https://drive.google.com/file/d/1y1TjBpeSI49eJQ250xL4WucFjnKdHdCY/view?usp=sharing
 
 ## How to Run
 1. Clone this repository
