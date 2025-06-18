@@ -1,7 +1,7 @@
 # Heart Disease Prediction with Optimization Techniques
 
 ## Project Overview
-This project explores different optimization and regularization techniques in machine learning models for heart disease prediction. We compare classical ML algorithms (Logistic Regression, SVM, Random Forest) with neural networks using various optimization approaches (different optimizers, regularization techniques, dropout, early stopping). The workflow includes model training, evaluation, error analysis, and model persistence for reproducibility and deployment.
+This project explores different optimization and regularization techniques in machine learning models for heart disease prediction. I compared classical ML algorithms (Logistic Regression, SVM, Random Forest) with neural networks using various optimization approaches (different optimizers, regularization techniques, dropout, early stopping). The workflow includes model training, evaluation, error analysis, and model persistence for reproducibility and deployment.
 
 ## Dataset
 The dataset contains 303 samples with 13 features related to heart health and a binary target variable indicating presence (1) or absence (0) of heart disease. Features include age, sex, chest pain type, blood pressure, cholesterol levels, etc.
@@ -28,10 +28,10 @@ The dataset contains 303 samples with 13 features related to heart health and a 
 
 | Instance | Optimizer | Regularizer | Epochs | Early Stopping | Learning Rate | Dropout | Accuracy | F1 Score | Precision | Recall | ROC AUC | Loss |
 |----------|-----------|-------------|--------|-----------------|---------------|---------|----------|----------|-----------|--------|---------|------|
-| 1        | Adam      | None        | 100    | No              | 0.001         | 0.0     | 0.82     | 0.83     | 0.85      | 0.81   | 0.89    | 0.45 |
-| 2        | Adam      | L2          | 50     | Yes             | 0.001         | 0.0     | 0.87     | 0.88     | 0.89      | 0.87   | 0.93    | 0.32 |
-| 3        | RMSprop   | None        | 50     | Yes             | 0.0005        | 0.3     | 0.84     | 0.85     | 0.86      | 0.84   | 0.91    | 0.38 |
-| 4        | Adam      | L1          | 50     | Yes             | 0.0001        | 0.2     | 0.86     | 0.87     | 0.88      | 0.86   | 0.92    | 0.35 |
+| 1        | Adam      | None        | 100    | No              | 0.001         | 0.0     | 0.95     | 0.96     | 0.92      | 1      | 0.96    | 0.22 |
+| 2        | Adam      | L2          | 50     | Yes             | 0.001         | 0.0     | 0.91     | 0.92     | 0.88      | 0.95   | 0.93    | 0.27 |
+| 3        | RMSprop   | None        | 50     | Yes             | 0.0005        | 0.3     | 0.91     | 0.82     | 0.88      | 0.95   | 0.91    | 0.28 |
+| 4        | Adam      | L1          | 50     | Yes             | 0.0001        | 0.2     | 0.93     | 0.93     | 0.92      | 0.95   | 0.95    | 0.25 |
 
 ### Best Performing Model
 The best performing neural network was Instance 2 with:
